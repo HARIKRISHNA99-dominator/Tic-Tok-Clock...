@@ -1,0 +1,174 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    
+     <title>Analog-clock</title>
+        <style>
+            html{
+                background-color: black;
+            }
+            body{
+                text-align: center;  /* make the box in center */
+            }
+
+            .clock{
+                width: 500px;
+                height: 500px;
+                background-color: rgb(128, 0, 0);
+                display: inline-block ;
+                border: solid 3px yellow;
+                border-radius: 50%;       /* give u round shape */
+                padding: 20px;
+            }
+
+            .sec,.min,.hour{
+                line-height: 45px;
+                position: relative;
+                transform-origin: bottom ;
+            }
+
+            .sec{
+                height: 250px;
+                width: 5px;
+                left: 245px;
+                background-color: black;
+                z-index: 3;
+                animation: sec_anim 60s linear infinite;
+            }
+            .min{
+                height: 250px;
+                width: 10px;
+                left: 245px;
+                background-color: pink;
+                top: -250px;
+                z-index: 2;
+                animation: min_anim 600s linear infinite;
+              }
+
+            .hour{
+                height: 200px;
+                width: 15px;
+                left: 245px;
+                top: -430px;
+                background-color: blue;
+                z-index: 3;
+                animation: hour_anim 60000s linear infinite;
+            }
+
+            @keyframes sec_anim{
+                from{transform: rotatez(0deg);}
+                to{transform: rotatez(360deg);}
+            }
+
+            @keyframes min_anim{
+                from{transform: rotatez(0deg);}
+                to{transform: rotatez(360deg);}
+            }
+
+            @keyframes hour_anim{
+                from{transform: rotatez(0deg);}
+                to{transform: rotatez(360deg);}
+            }
+
+            .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{
+
+               font-family: Arial;
+                font-size: 3.7em;
+                position: relative;
+                color: chartreuse;
+                z-index: 0;
+                text-shadow: darkblue;
+
+            }
+
+            .one{
+                top: -648px;
+                left: 123px;
+            }
+            .two{
+                top: -648px;
+                left: 123px;
+            }
+            .three{
+                top: -648px;
+                left: 123px;
+            }
+            .four{
+                top: -648px;
+                left: 123px;
+            }
+            .five{
+                top: -648px;
+                left: 123px;
+            }
+            .six{
+                top: -648px;
+                left: 123px;
+            }
+
+            .seven{
+                top: -648px;
+                left: 123px;
+            }
+
+            .eight{
+                top: -648px;
+                left: 123px;
+            }
+
+            .nine{
+                top: -648px;
+                left: 123px;
+            }
+
+            .ten{
+                top: -648px;
+                left: 123px;
+            }
+            .eleven{
+                top: -648px;
+                left: 123px;
+            }
+            .twelve{
+                top: -648px;
+                left: 123px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+
+ </head>
+
+ <body>
+     <div class="clock">
+
+        <div class="sec" ></div>
+        <div class="min" ></div>
+        <div class="hour"></div>
+
+         <div class="one" id="1"></div>
+         <div class="two" id="2"></div>
+         <div class="three" id="3"></div>
+         <div class="four" id="4"></div>
+         <div class="five" id="5"></div>
+         <div class="six" id="6"></div>
+         <div class="seven" id="7"></div>
+         <div class="eight" id="8"></div>
+         <div class="nine" id="9"></div>
+         <div class="ten" id="10"></div>
+         <div class="eleven" id="11"></div>
+         <div class="twelve" id="12"></div>
+         </div>
+     
+ </body>
+ </html>
